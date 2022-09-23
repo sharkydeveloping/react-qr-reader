@@ -146,7 +146,7 @@ class Reader extends React.Component {
     const constraints = {}
 
     if (supported.facingMode) {
-      constraints.facingMode = { ideal: facingMode }
+      constraints.facingMode = { exact: facingMode }
     }
     if (supported.frameRate) {
       constraints.frameRate = { ideal: 25, min: 10 }
